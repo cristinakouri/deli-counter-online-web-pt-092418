@@ -9,7 +9,7 @@ def line(array)
       katz_deli << "#{index + 1}. #{element}"
     end
     answer = katz_deli.join(" ")
-    return "The line is currently: #{answer}"
+    puts "The line is currently: #{answer}"
   end
 end
 
