@@ -15,10 +15,12 @@ end
 
 def take_a_number(array, string)
   blank = []
-  array << string
-  array.each_with_index do |people, index|
-    blank << "Welcome, #{people}. You are number #{index + 1} in line."
+    if array.length == 0 
+      array << string
+    elsif array.length > 0 
+     array.each_with_index do |people, index|
+      blank << "Welcome, #{people}. You are number #{index + 1} in line."
+    end
   end
-  blank
+  blank.join(" ")
 end
-take_a_number(['ana', 'david', 'charles'], 'bob')
