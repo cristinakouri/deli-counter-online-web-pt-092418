@@ -8,7 +8,7 @@ def line(array)
     array.each_with_index do |element, index|
       katz_deli << "The line is currently: #{index + 1}. #{element}"
     end
-    katz_deli
+    puts katz_deli
   end
 end
 
