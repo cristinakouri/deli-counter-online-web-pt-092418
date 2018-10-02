@@ -15,8 +15,11 @@ end
 
 def take_a_number(array, string)
   blank = []
-  array << string
-  array.each_with_index do |people, index|
+  if array.length == 0 
+    array << string
+  else 
+    array << string 
+    array.each_with_index do |people, index|
     blank << "Welcome, #{people}. You are number #{index + 1} in line."
   end
   puts blank
