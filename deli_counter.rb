@@ -6,9 +6,10 @@ def line(array)
     puts "The line is currently empty."
   else 
     array.each_with_index do |element, index|
-      katz_deli << "The line is currently: #{index + 1}. #{element}"
+      katz_deli << "#{index + 1}. #{element}"
     end
-    puts katz_deli
+    answer = katz_deli.join(" ")
+    return "The line is currently: #{answer}"
   end
 end
 
